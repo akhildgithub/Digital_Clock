@@ -6,11 +6,15 @@ setInterval(function() {
   let da = a.getDate()
   let mo = a.getMonth()
   let ye = a.getFullYear()
+  let day=a.getDay()
   let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  let Day=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
   console.log(hr, mi, se, da, mo + 1, ye)
   document.getElementById('Hour').innerHTML = String(hr).padStart(2, '0') + ' :'
   document.getElementById('Min').innerHTML = String(mi).padStart(2, '0') + ' :'
   document.getElementById('Sec').innerHTML = String(se).padStart(2, '0')
+  document.getElementById('day').innerHTML = Day[day]
+  
 
   document.getElementById('Date').innerHTML = da + (da % 10 == 1 ? 'st' : (da % 10 == 2 ? 'nd' : (da % 10 == 3 ? 'rd' : 'th')))
   document.getElementById('Month').innerHTML = month[mo] + ', '
