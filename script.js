@@ -7,7 +7,7 @@ setInterval(function() {
   let mo = a.getMonth()
   let ye = a.getFullYear()
   let day=a.getDay()
-  let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  let month = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
   let Day=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
   console.log(hr, mi, se, da, mo + 1, ye)
   document.getElementById('Hour').innerHTML = String(hr).padStart(2, '0') + ' :'
