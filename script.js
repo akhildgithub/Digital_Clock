@@ -16,7 +16,7 @@ setInterval(function() {
   document.getElementById('day').innerHTML = Day[day]
   
 
-  document.getElementById('Date').innerHTML = da + (da % 10 == 1 ? 'st' : (da % 10 == 2 ? 'nd' : (da % 10 == 3 ? 'rd' : 'th')))
+  document.getElementById('Date').innerHTML = da + (da % 10 == 1 ? 'st ' : (da % 10 == 2 ? 'nd ' : (da % 10 == 3 ? 'rd ' : 'th ')))
   document.getElementById('Month').innerHTML = month[mo] + ', '
   document.getElementById('Year').innerHTML = ye
 }, 1000)
